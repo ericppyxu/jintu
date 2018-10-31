@@ -1,0 +1,60 @@
+
+.case-1 {
+    padding: 30px 0;
+    background: #f2f2f2;
+}
+
+.case-1 .h4-p2 {
+    font-size: 16px;
+    position: relative;
+    padding: 20px 8px;    
+    background: #fff;
+}
+
+.case-1 .row .float {
+    position: relative;
+    top: 0px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    
+}
+
+.case-1 .row .float:hover{
+    top: -20px;
+    box-shadow:4px 0 4px lightslategrey, 0 4px 4px lightslategrey;    
+}
+
+
+.case-1 .h4-p2-span {
+    float: right;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.case-1 .my-badge2,.case-1 .my-badge3 ,.case-1 .my-badge4{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background: #ff9900;
+    margin: 0 4px 4px 0;
+}
+.case-1 .my-badge3 {
+    background: #ff0000;
+}
+.case-1 .my-badge4 {
+    background: #DEBCFF;
+}
+
+.case-1 .my-badge2:empty ,.case-1 .my-badge3:empty ,.case-1 .my-badge4:empty{
+    display: inline-block;
+}
+
+.case-1 .re-margin {
+    margin-bottom: 0;
+}
+
+.case-1 .h4-row {
+    padding-top: 50px;
+}

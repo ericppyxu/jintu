@@ -1,0 +1,124 @@
+{if $full_page}
+<!-- $Id: user_account_manage.htm 14598 2008-05-21 07:41:15Z testyang $ -->
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
+<link href="../js/calendar/calendar.css" rel="stylesheet" type="text/css" />
+<div class="form-div">
+  <form name="searchForm" action="javascript:searchMsg()" method="post" style="margin:0px">
+    来自页面:
+    <select name="msg_type">
+      <option value="-1">{$lang.select_please}</option>
+      {if $select_list}
+      {foreach from =$select_list item=res}
+      <option value="{$res.goods_id}">{$res.goods_name}</option>
+      {/foreach}
+      {/if}
+
+    </select>&nbsp;&nbsp;
+    手机号: <input type="text" name="keyword" /> &nbsp;&nbsp;
+    <input type="submit" name="submit" value="查询" class="button" />
+  </form>
+</div>
+
+<!-- start article list -->
+<div class="list-div" id="listDiv">
+{/if}
+<table cellpadding="3" cellspacing="1">
+  <tr>
+    <th>编号</th>
+    <th>来自页面</th>
+    <th>姓名</th>
+    <th>手机号</th>
+    <th>预约时间</th>
+    <th>是否回电</th>
+    <th>回电时间</th>
+    <th>回电结果</th>
+    <th>{$lang.handler}</th>
+  </tr>
+  {foreach from =$card_list item=msg}
+  <tr>
+    <td align="center">{$msg.subscribe_housse_id}</td>
+    <td align="center">{$msg.goods_name}</td>
+    <td align="center">{if $msg.use_name}{$msg.use_name}{else}匿名{/if}</td>
+    <td align="left">{$msg.mobile_phone}</td>
+    <td align="center">{$msg.add_time}</td>
+    <td align="center" >{if $msg.is_check eq 0}未回电{else}已回电{/if}</td>
+    <td align="center"  nowrap="nowrap">{if $msg.reply_time}{$msg.reply_time}{/if}</td>
+    <td align="center">{if $msg.data}{$msg.data|truncate:40|escape:html}{/if}</td>
+    <td align="center">
+      <a href="goods_phone_manage.php?act=edit&id={$msg.subscribe_housse_id}" title="{$lang.view}">
+        <img src="images/icon_edit.gif" border="0" height="16" width="16" />
+      </a>&nbsp;&nbsp;
+      <a href="goods_phone_manage.php?act=remove&id={$msg.subscribe_housse_id}" onclick="del();" title="{$lang.remove}">
+        <img src="images/icon_drop.gif" border="0" height="16" width="16">
+      </a>
+    </td>
+  </tr>
+  {foreachelse}
+  <tr><td class="no-records" colspan="9">{$lang.no_records}</td></tr>
+  {/foreach}
+</table>
+<!--分页样式-->
+<table id="page-table" cellspacing="0">
+  <tr>
+    <td align="right" nowrap="true">
+    {include file="page.htm"}
+    </td>
+  </tr>
+</table>
+
+{if $full_page}
+
+</div>
+<!-- end article list -->
+<br />
+{literal}
+<script type="Text/Javascript" language="JavaScript">
+<!--
+onload = function()
+{
+  /* 检查订单 */
+  startCheckOrder();
+}
+//-->
+//分页js赋值
+listTable.recordCount = {$record_count};
+listTable.pageCount = {$page_count};
+{foreach from=$filter item=item key=key}
+listTable.filter.{$key} = '{$item}';
+{/foreach}
+<!--
+onload = function()
+{
+    document.forms['searchForm'].elements['keyword'].focus();
+    // 开始检查订单
+    startCheckOrder();
+}
+
+/**
+ * 搜索标题
+ */
+function searchMsg()
+{
+    var keyword = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
+    var msg_type = document.forms['searchForm'].elements['msg_type'].value;
+
+    listTable.filter['keywords'] = Utils.trim(document.forms['searchForm'].elements['keyword'].value);
+    listTable.filter['msg_type'] = document.forms['searchForm'].elements['msg_type'].value;
+    listTable.filter['page'] = 1;
+    listTable.loadList();
+}
+
+function del(){
+if(confirm("确认删除吗")){
+}
+else{
+return;
+}
+}
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}
+{/if}

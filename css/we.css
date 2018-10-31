@@ -1,0 +1,64 @@
+
+.we-2 {
+    padding: 30px 0;
+}
+
+.we-2 > .container h1, .we-2 >.container h2,.we-2> .container p, .we-4 h2,.we-4 p {
+    text-align: center;
+}
+
+.we-2 > .container h1 {
+    font-size: 50px;
+    color: #FF3333;
+}
+
+.we-4,.we-5,we-6,.we-7,.we-8  {
+    padding: 30px 0;
+}
+
+.we-5 h2,.we-6 h2{
+    text-align: center;
+}
+.we-5 .w5-bg{
+    background: #f2f2f2;
+}
+
+.we-7 {
+    position: relative;
+}
+
+.we-7 > p {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;        
+}
+
+.we-8 h2,.we-8 p {    
+    text-align: center;        
+    margin: 0;
+}
+.we-8 h2 {
+    margin-bottom: 16px;
+}
+.we-8 .we8_p1{
+    margin-bottom: 45px;
+}
+
+.we-8 .w7-blod{
+    /*font-weight: bold;*/
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.we-8 .we8_ul1 li{
+    font-size: 12px;
+    text-align: left;
+}
+
+.we-8 img {
+    max-width: 100px;
+    margin: auto;
+}

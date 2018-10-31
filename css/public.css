@@ -1,0 +1,224 @@
+body{
+    box-sizing: border-box;    
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",SimSun,sans-serif;
+    background: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'fzlantingheis-ul-gbregular';
+
+  src: url('../fonts/fzltcxhjw_0.woff2');
+  src: url('../fonts/fzlantingheis-ul-gbregular.ttf'); 
+}
+
+
+
+h1,h2 {
+    font-family: 'fzlantingheis-ul-gbregular';
+    font-weight: bold;
+    font-size: 24px;
+}
+
+img {
+    width: 100%;
+    margin: auto;
+}
+
+.banner #carousel-id .carousel-inner > .item > img,
+.banner #carousel-id .carousel-inner > .item > a > img {
+    width: 100%;                
+    margin: auto;
+}
+
+.carousel-indicators li{
+    background: rgba(255, 255, 255, .5);
+    border: none;
+}
+.navbar-default{
+background-color: transparent;
+  border-color: transparent;
+}
+
+#home-header {
+    font-size: 14px;
+    background: #fff;
+}
+
+#home-header .my-navbar {
+    margin-bottom: 0px;
+}
+
+#home-header .my-container {
+    margin-top: 80px;
+}
+
+
+#home-header .navbar-default {
+    border: transparent;
+    background: transparent;
+}
+
+#home-header a span {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+#home-header a span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    visibility: hidden;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;    
+}
+
+#home-header navbar-collapse a {
+    color: #0072bc;
+}
+
+#home-header li .home-hover:hover{
+    color: #ff0000;
+}
+
+#home-header li a:hover span::before{
+    visibility: visible;   
+    transform: scaleX(1); 
+    -webkit-transform: scaleX(1);
+
+}
+
+#home-header .header-active::before{
+    visibility: visible;   
+    transform: scaleX(1); 
+    -webkit-transform: scaleX(1);
+}
+#home-header .header-active{
+    color: #ff0000;
+}
+
+.navbar-brand img {
+    top: -50px;
+    position: relative;
+}
+
+#home-header-ul .my-login{
+    color: #5cb85c;
+    padding-right: 00;
+}
+#home-header-ul .my-signup {
+    color: #f96b52;
+    padding-left: 10px;
+}
+#home-header-ul .my-login:hover{
+    opacity: .8;
+}
+#home-header-ul .my-signup:hover{
+    opacity: .8;
+}
+
+
+.footer {
+    position: relative;
+    padding: 20px 0 0 0;
+    background: rgba(51, 51, 51, 1);
+    color: #999;
+}
+
+.footer .footer-bottom {
+    border-top: 1px solid #999;
+    margin-top: 50px;
+    padding: 20px 0 0 0;
+}
+
+.footer-top {
+    position: relative;
+}
+.footer-top h2 {
+    font-family: Microsoft Yahei;
+}
+
+.footer #contact {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 6px 30px;
+    background: #ff9900;
+    border: none;
+}
+
+.my-thumbnail {
+    border: none;
+    border-radius: 0;
+    background: transparent;    
+    padding: 0;
+    position: relative;
+}
+
+.add-margin-bottom {
+    margin-bottom: 20px;
+}
+.add-margin-bottom2 {
+    margin-bottom: 40px;
+}
+
+.add-padding-top {
+    padding-top: 40px;
+}
+.add-padding-bottom {
+    padding-bottom: 20px;
+}
+
+.add-padding {
+    padding: 20px 0;
+}
+
+
+.modal-login {
+    position: relative;
+    top: 200px;
+    background: #f2f2f2;
+    border-radius: 0;    
+}
+
+.modal-login > .modal-body input {
+    border: none;
+    border-radius: 0;
+    display: block;
+    border: none;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.modal-login > .modal-body button {
+    border: none;
+    border-radius: 0;
+    background: #5cb85c;
+    color: #fff;
+    outline: none;
+    
+}
+
+.modal-login h4 > span {
+    position: absolute;
+    right: 80px;
+    font-size: 14px;
+    top: 18px;
+}
+.modal-login > .my-modal-header, .modal-login > .my-modal-body{
+    padding: 15px 30px;
+}
+

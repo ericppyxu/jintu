@@ -1,0 +1,66 @@
+
+.pro-2,.pro-3,.pro-4,.pro-5 {
+    padding: 30px 0;
+}
+
+.pro-text {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pro-5 .h4-p2 {
+    font-size: 16px;
+    position: relative;
+    padding: 20px 8px;    
+    background: #fff;
+}
+
+.pro-5 .row .float {
+    position: relative;
+    top: 0px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    box-shadow:4px 0 4px lightslategrey, 0 4px 4px lightslategrey;    
+    
+}
+
+/*.pro-5 .row .float:hover{
+    top: -20px;
+    box-shadow:4px 0 4px lightslategrey, 0 4px 4px lightslategrey;    
+}*/
+
+
+.pro-5 .h4-p2-span {
+    float: right;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.pro-5 .my-badge2{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background: lightseagreen;
+    margin: 0 4px 4px 0;
+}
+
+.pro-5 .my-badge2:empty {
+    display: inline-block;
+}
+
+.pro-5 .re-margin {
+    margin-bottom: 0;
+}
+
+.pro-5 .pro-font {
+    font-size: 24px;
+
+}
+
+.pro-2 .pro2_info img {    
+    max-width: 430px;          
+    margin: auto;
+}
+

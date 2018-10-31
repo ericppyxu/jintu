@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/*首页*/
+.banner {display: none;}
+.home-2 {display: none;}
+
+.wap_banner {display: block;}
+
+.home-3 {padding: 0;}
+.home-3 .home-3-h1{padding: 0;}
+#home-header .my-container {margin-top: 0;}
+.navbar-brand img {
+    top: -6px;
+    position: relative;
+    max-width: 100px;
+    left: 15px;
+}
+.home-4 .h4-p {
+    padding: 10px 0;
+}
+.home-4 .my-badge {
+    top: 16px;
+    padding: 4px 8px;
+}
+.home-4 .h4-p2 {font-size: 12px;padding: 10px 8px;}
+.home-4 .h4-p2-span {font-size: 12px; line-height: 12px;}
+.home-4 .my-badge2, .home-4 .my-badge3 {width: 12px; height: 12px;}
+.home-5 .h5-h {padding: 0;}
+.home-4 .row .float:hover {
+    top: 0;
+    box-shadow: auto;
+}
+
+
+/*我们*/
+.we-4, .we-5, we-6, .we-7, .we-8 {padding: 20px 0;}
+.we-8 .we8_p1 {margin-bottom: 20px;}    
+
+/*新房*/
+.jin-1 {padding: 0;background: none;}
+.jin-1 .jin1-title{ margin-top: 20px;}
+.jin-1 .jin1-title h3{font-size: 24px;}
+.jin-1 .jin1-title span{margin-left: 6px; top: -2px;}
+.jin-4 .jin4-content a{width: 120px;height: 30px;line-height: 30px;bottom: 0px;font-size: 14px; }
+
+/*案例*/
+.case-1 .row .float:hover{
+    top: 0;
+    box-shadow:auto;
+
+}
+.case-1 .h4-p2{
+    font-size: 12px;
+    padding: 10px 6px;
+}
+
+.case-1 .h4-p2-span {
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+.case-1 .h4-row{padding-top: 0;}
+
+.ss_2 .ct_cover {
+    display: none;
+}
+

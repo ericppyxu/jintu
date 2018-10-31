@@ -1,0 +1,18 @@
+
+.agent-2,.agent-3,.agent-4 {
+    padding: 30px 0;
+}
+
+.agent-2 h2,.agent-2 p,.agent-3 h2{
+    text-align: center;
+}
+
+.agent-font {
+    font-size: 16px;
+    padding: 20px 0;
+}
+
+.agent-4 h2,.agent-4 p{
+    text-align: center;
+}
+

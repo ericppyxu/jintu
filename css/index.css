@@ -1,0 +1,161 @@
+.home-2  img {
+    width: 100%;
+    margin: auto;
+    max-width: 228px;
+    max-height: 78px;
+    display: none;
+}
+.home-2  img.img_active {
+    display: block;
+}
+.home-3 {
+    padding: 20px 0 20px 0;
+}
+
+.home-3 .home-3-h1{
+    text-align: center;
+    padding: 20px 0;
+}
+/*.my-thumbnail >img {
+    border: 10px solid #fff;
+}*/
+
+.home-4{
+    /*background: #fff;*/
+    padding: 20px 0;
+    background: #f2f2f2;
+}
+.home-4 .h4-p {
+    font-size: 20px;
+    position: relative;
+    padding: 20px 0;    
+
+}
+.home-4 .h4-p2 {
+    font-size: 16px;
+    position: relative;
+    padding: 20px 8px;    
+    background: #fff;
+}
+
+.home-4 .row .float {
+    position: relative;
+    top: 0px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    
+}
+
+.home-4 .row .float:hover{
+    top: -20px;
+    box-shadow:4px 0 4px lightslategrey, 0 4px 4px lightslategrey;    
+}
+
+
+.home-4 .my-badge {
+    position: absolute;
+    right: 0;
+    top: 19px;
+    padding: 8px 16px;
+    background: transparent;
+    color: #333;
+    border: 1px solid #333;    
+}
+
+.home-4 .h4-p2-span {
+    float: right;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.home-4 .my-badge2,.home-4 .my-badge3{
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background: #FF9900;
+    margin: 0 4px 4px 0;
+}
+.home-4 .my-badge3{
+    background: #ff0000;
+}
+
+.home-4 .my-badge2:empty,.home-4 .my-badge3:empty {
+    display: inline-block;
+}
+
+.home-4 .re-margin {
+    margin-bottom: 0;
+}
+
+.home-4 .h4-row {
+    padding-top: 50px;
+}
+
+.home-5 {
+    padding: 20px 0 50px 0;
+}
+
+.home-5 .h5-image img {
+    max-height: 250px;
+    max-width: 390px;
+}
+
+.home-5 .h5-h {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+.home-5  #home5-3 {
+    max-width: 1200px;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    /* height: 580px; */
+    overflow: hidden;
+}
+
+.banner .home-banner{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.banner .home-banner li{
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    left: 0;
+    top: 0;
+    display: block;
+}
+.banner .home-banner li:nth-child(1){
+    background: url(../images/banner1.jpg) repeat;
+    background-position: center center;
+    z-index: 10;
+}
+.banner .home-banner li:nth-child(2){
+    z-index: 8;
+    background: url(../images/banner2.jpg) repeat;
+    background-position: center center;
+}
+.banner .home-banner li:nth-child(3){
+    z-index: 6;
+    background: url(../images/banner3.jpg) repeat;
+    background-position: center center;
+}
+
+/*首页wap*/
+.wap_banner {
+    display: none;
+}

@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #f2f2f2;
+    font-family: '微软雅黑';
+    box-sizing: border-box;        
+}
+
+#signup-header {
+    padding: 0 30px;
+    position: relative;
+    line-height: 55px;
+    height: 85px;    
+    margin-bottom: 40px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9e9ea;
+        
+}
+
+#signup-header > #header-img {
+    display: inline;
+}
+
+#signup-header a {
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    color: #333;
+    font-size: 14px;
+}
+
+#signup-header a:hover{
+    text-decoration: underline;
+}
+
+.derection {
+    border: solid #333;
+    border-width: 1px 1px 0 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
+
+.signup-content > .signup-title > h2 > a,.login-content > .login-title > h2 > a  {
+    font-size: 14px;
+    color: #5cb85c;
+    position: absolute;
+    right: 15px;
+    top: 40px;
+}
+.signup-content > .signup-title,.login-content > .login-title  {
+    margin-bottom: 40px;
+}
+.signup-content > input ,.signup-content > .send-info > input,.login-content > input {
+    display: block;
+    text-indent: 19px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    width: 100%;
+    height: 55px;
+    font-size: 14px;
+    outline: none;
+}
+
+.signup-content .send-info > input {
+    border-top: 1px solid #e4e4e4;
+}
+
+.login-content input:nth-of-type(1){
+    border-top: 1px solid #e4e4e4;
+}
+
+#sigup-submit,#login-submit {
+    height: 55px;
+    font-size: 18px;
+}
+
+
+.signup-content .send-info {
+    position: relative;
+}
+
+.signup-content .send-info >button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    outline: none;
+    
+}
+
+.login-content  #lookpw {
+    float: right;
+}

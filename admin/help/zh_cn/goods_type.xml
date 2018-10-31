@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk"?>
+
+<help>
+
+  <section id="manage">
+    <title>房型类型管理</title>
+    <content>
+    <![CDATA[
+      <p>房型类型是各种房型属性的一个集合。</p>
+
+      <p>在房型类型列表，可以查看该房型类型的属性数和启用/禁用状态。单击房型类型名称，即可编辑，完成后按回车键或离开焦点时即可完成保存。</p>
+
+	  <p>在房型类型列表表头的“操作”中，单击“<span class="link">属性</span>”，可管理该房型类型的属性列表并可为该房型类型添加属性。</p>
+	]]>
+    </content>
+  </section>
+
+</help>
